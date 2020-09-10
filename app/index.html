@@ -5,12 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mart Place | Home Page</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/linear-icons-style.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-img" src="images/header-logo.png" alt="Mart Place Logo">
+                    </a>
+                    <a class="header__seller" href="#">
+                        Become a Seller
+                    </a>
+                    <div class="header__info">
+                        <ul class="header__icons">
+                            <li class="header__icons-item">
+                                <a class="header__icons-link" href="#">
+                                    <span class="lnr lnr-alarm"></span>
+                                    <div class="header__icons-counter header__icons-counter--red">25</div>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a class="header__icons-link" href="#">
+                                    <span class="lnr lnr-envelope"></span>
+                                    <div class="header__icons-counter header__icons-counter--green">6</div>
+                                </a>
+                            </li>
+                            <li class="header__icons-item">
+                                <a class="header__icons-link" href="#">
+                                    <span class="lnr lnr-cart"></span>
+                                    <div class="header__icons-counter header__icons-counter--blue">2</div>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="header__profile" href="#">
+                            <img class="header__profile-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                            <div class="header__profile-info">
+                                <div class="header__profile-name">
+                                    Taofiq Hakim
+                                </div>
+                                <div class="header__profile-balance">
+                                    $20.45
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <nav class="header__nav">
+            <div class="container">
+                <div class="header__nav-inner">
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Home</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">All Products</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Wordpress</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Features</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="#" class="header__menu-link">Pages</a>
+                        </li>
+                    </ul>
+                    <form class="search" action="#">
+                        <label class="search__label" for="search">
+                            Search product here                            
+                        </label>
+                        <input class="search__input" id="search" type="search" placeholder="Search product here...">
+                        <button class="search__submit" type="submit">
+                            <span class="lnr lnr-magnifier"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>

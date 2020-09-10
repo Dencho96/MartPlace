@@ -1,0 +1,14 @@
+@mixin blue-btn {
+    transition-property: background-color, outline, box-shadow;
+    transition: .3s;
+    &:hover {
+        background-color: $btn-hover;
+    }
+    &:focus {
+        outline: transparent;
+        background-color: $btn-hover;
+    }
+    &:active {
+        box-shadow: inset 0 -3px 4px #e2fbff;
+    }
+}

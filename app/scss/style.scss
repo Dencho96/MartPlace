@@ -1,3 +1,165 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
+@import 'mixins';
+//header styles start
+.header {
+    &__top {
+        background-color: $header-top;
+    }
+    &__top-inner {
+        min-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        margin-left: 7px;
+    }
+    &__seller {
+        margin: -3px 46px 0 auto;
+        padding: 4px 18px;
+        background-color: $blue;
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+        border-radius: 18px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        @include blue-btn;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icons {
+        margin-right: 48px;
+        display: flex;
+        align-items: center;
+    }
+    &__icons-item {
+        position: relative;
+        font-size: 20px;
+        &+.header__icons-item {
+            margin-left: 32px;
+        }
+    }
+    &__icons-link {
+        transition: color .3s;
+        &:hover {
+            color: red;
+        }
+    }
+    &__icons-counter {
+        position: absolute;
+        top: -16px;
+        min-width: 22px;
+        height: 22px;
+        padding: 5px;
+        padding-top: 2px;
+        border-radius: 50%;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        &--red {
+            background-color: $red;
+            left: 11px;
+        }
+        &--green {
+            background-color: $green;
+            left: 14px;
+        }
+        &--blue {
+            background-color: $blue;
+            left: 15px;
+        }
+    }
+    &__profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__profile-avatar {
+        margin-right: 22px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    &__profile-name {
+        color: #333;
+        font-weight: 500;
+    }
+    &__profile-balance {
+        color: #0674ec;
+        font-size: 15px;
+    }
+    &__nav-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu-item {
+        font-size: 15px;
+        font-weight: 500;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        &+.header__menu-item {
+            margin-left: 34px;
+        }
+    }
+    &__menu-link {
+        transition-property: box-shadow, outline, color;
+        transition: .3s;
+        &:hover {
+            box-shadow: 0 2px $gold;
+        }
+        &:focus {
+            outline: transparent;
+            box-shadow: 0 2px $gold;
+        }
+        &:active {
+            color: $blue;
+        }
+    }
+}
+
+.search {
+    position: relative;
+    width: 360px;
+    &__label {
+        font-size: 0;
+    }
+    &__input {
+        width: 100%;
+        padding: 4px 94px 7px 24px;
+        border: 1px solid #d9dfe5;
+        border-radius: 23px;
+        font-size: 15px;
+        line-height: 30px;
+    }
+    &__submit {
+        position: absolute;
+        max-width: 70px;
+        width: 100%;
+        right: 0;
+        padding: 7px 0;
+        background-color: #0674ec;
+        border: none;
+        border-radius: 23px;
+        cursor: pointer;
+        .lnr-magnifier {
+            color: #fff;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        @include blue-btn;
+    }
+}
+
+//header styles end
