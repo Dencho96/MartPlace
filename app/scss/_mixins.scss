@@ -1,3 +1,18 @@
+@mixin link-transition {
+    transition-property: box-shadow, outline, color;
+    transition: .3s;
+    &:hover {
+        box-shadow: 0 2px $gold;
+    }
+    &:focus {
+        outline: transparent;
+        box-shadow: 0 2px $gold;
+    }
+    &:active {
+        color: $blue;
+    }
+}
+
 @mixin blue-btn {
     transition-property: background-color, outline, box-shadow;
     transition: .3s;
@@ -17,4 +32,14 @@
     padding: 19px 32px 17px 32px;
     border-radius: 28px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+@mixin form-transition {
+    transition: box-shadow .2s;
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0 0 3px #555;
+        z-index: 2;
+    }
 }
