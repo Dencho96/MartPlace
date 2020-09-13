@@ -19,4 +19,12 @@ $(function() {
         spacing: "3px"
     });
 
+    $(".product__rating--sm").rateYo({
+        rating: 5,
+        starWidth: "13px",
+        spacing: "3px"
+    });
+
+
+    var mixer = mixitup('.newest__product-inner');
 });

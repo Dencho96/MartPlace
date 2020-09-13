@@ -186,6 +186,7 @@
                                 <a class="product__title" href="#">
                                     One Page Resume Template
                                 </a>
+                                <!-- Почему то на ссылке не работает :active -->
                                 <div class="product__about">
                                     <img class="product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
                                     <a class="product__author-name" href="#">AazzTech</a>
@@ -221,6 +222,253 @@
             </div>
 
 
+        </section>
+        <section class="newest">
+            <div class="container">
+                <div class="newest__entrance">
+                    <div class="newest__title">Newest Release Products</div>
+                    <div class="newest__filter-by">
+                        Filter by:
+                    </div>
+                    <div class="newest__icon"></div>
+                    <!-- Вот тут не очень понял с надписью, что тут должно быть ? -->
+                </div>
+                <!-- Мне кажется, что эту часть можно выделить как отдельный блок, она в похожих вариациях используеться на странице. Но вот тут в конце есть "filter by:" в предыдущем блоке была такая же часть, но на ней в конце висело управление слайдером, может его тоже выделить в отдельный блок и использовать, при необходимости. Незнаю правильно ли я думаю. -->
+                <ul class="newest__filter">
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-plugins">
+                            Plugins
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-wordpress">
+                            WordPress
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-site-template">
+                            Site Template
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-psd-template">
+                            PSD Template
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-joomla">
+                            Joomla
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-ui">
+                            User Interface
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-loading">
+                            Loading Page
+                        </button>
+                    </li>
+                    <li class="newest__filter-item">
+                        <button class="newest__button" type="button" data-filter=".category-software">
+                            Software
+                        </button>
+                    </li>
+                </ul>
+                <div class="newest__product-inner">
+
+                    <div class="product product--sm mix category-plugins" data-order="1">
+
+                        <div class="product__img-inner">
+                            <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__buttons">
+                                <a class="product__buttons-item product__buttons-item--more" href="#">More Info</a>
+                                <a class="product__buttons-item product__buttons-item--live" href="#">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">Theme-Valley</a>
+                                <img class="product__type" src="images/type-plugin.svg" alt="plugin">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $20
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>90
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>246
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product product--sm mix category-psd-template" data-order="2">
+                        <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                Marketify Coffee Shop
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">EchoTheme</a>
+                                <img class="product__type" src="images/type-psd.svg" alt="psd">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $18
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>48
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>50
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product product--sm mix category-site-template" data-order="3">
+                        <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                Bryson - Portfolio Template
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">Artcorner</a>
+                                <img class="product__type" src="images/type-html.svg" alt="html">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $10
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>56
+                            </div>
+                            <div class="product__rating--sm">
+
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>68
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product product--sm mix category-plugins" data-order="1">
+
+                        <div class="product__img-inner">
+                            <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__buttons">
+                                <a class="product__buttons-item product__buttons-item--more" href="#">More Info</a>
+                                <a class="product__buttons-item product__buttons-item--live" href="#">Live Demo</a>
+                            </div>
+                        </div>
+
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">Theme-Valley</a>
+                                <img class="product__type" src="images/type-plugin.svg" alt="plugin">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $20
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>90
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>246
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product product--sm mix category-psd-template" data-order="2">
+                        <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                Marketify Coffee Shop
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">EchoTheme</a>
+                                <img class="product__type" src="images/type-psd.svg" alt="psd">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $18
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>48
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>50
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product product--sm mix category-site-template" data-order="3">
+                        <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
+                        <div class="product__info product__info--sm">
+                            <a class="product__title product__title--sm" href="#">
+                                Bryson - Portfolio Template
+                            </a>
+                            <div class="product__about product__about--sm">
+                                <img class="product__author-avatar product__author-avatar--sm" src="images/profile-avatar.jpg" alt="Avatar">
+                                <a class="product__author-name" href="#">Artcorner</a>
+                                <img class="product__type" src="images/type-html.svg" alt="html">
+
+                            </div>
+                            <div class="product__text product__text--sm">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                        </div>
+                        <div class="product__stats product__stats--sm">
+                            <div class="product__price product__price--sm">
+                                $10
+                            </div>
+                            <div class="product__likes">
+                                <span class="lnr lnr-heart lnr--sm"></span>56
+                            </div>
+                            <div class="product__rating--sm">
+
+                            </div>
+                            <div class="product__sells product__sells--sm">
+                                <span class="lnr lnr-cart lnr--sm"></span>68
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newest__btn-inner">
+                    <a class="newest__btn" href="#">
+                        All New Products
+                    </a>
+                </div>
+
+            </div>
         </section>
     </main>
 

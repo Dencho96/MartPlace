@@ -13,7 +13,7 @@
     }
 }
 
-@mixin blue-btn {
+@mixin btn-transition {
     transition-property: background-color, outline, box-shadow;
     transition: .3s;
     &:hover {
