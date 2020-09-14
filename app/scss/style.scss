@@ -589,6 +589,12 @@
         font-size: 15px;
         color: #747b86;
         cursor: pointer;
+        transition-property: background-color, color;
+        transition: .3s;
+        &.mixitup-control-active {
+            background-color: $blue;
+            color: #fff;
+        }
     }
     &__product-inner {
         display: flex;
