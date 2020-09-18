@@ -15,43 +15,43 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
-                <div class="header__top-inner">
+                <div class="header__top-inner d-flex">
                     <a class="header__logo" href="#">
                         <img class="header__logo-img" src="images/header-logo.png" alt="Mart Place Logo">
                     </a>
-                    <a class="header__seller" href="#">
+                    <a class="btn btn--blue header__seller" href="#">
                         Become a Seller
                     </a>
-                    <div class="header__info">
-                        <ul class="header__icons">
+                    <div class="header__info d-flex">
+                        <ul class="header__icons d-flex">
                             <li class="header__icons-item">
                                 <a class="header__icons-link" href="#">
-                                    <span class="lnr lnr-alarm"></span>
-                                    <div class="header__icons-counter header__icons-counter--red">25</div>
+                                    <span class="lnr lnr-alarm header__icon"></span>
+                                    <span class="header__icons-counter header__icons-counter--red">25</span>
                                 </a>
                             </li>
                             <li class="header__icons-item">
                                 <a class="header__icons-link" href="#">
-                                    <span class="lnr lnr-envelope"></span>
-                                    <div class="header__icons-counter header__icons-counter--green">6</div>
+                                    <span class="lnr lnr-envelope header__icon"></span>
+                                    <span class="header__icons-counter header__icons-counter--green">6</span>
                                 </a>
                             </li>
                             <li class="header__icons-item">
                                 <a class="header__icons-link" href="#">
-                                    <span class="lnr lnr-cart"></span>
-                                    <div class="header__icons-counter header__icons-counter--blue">2</div>
+                                    <span class="lnr lnr-cart header__icon"></span>
+                                    <span class="header__icons-counter header__icons-counter--blue">2</span>
                                 </a>
                             </li>
                         </ul>
-                        <a class="header__profile" href="#">
+                        <a class="header__profile d-flex" href="#">
                             <img class="header__profile-avatar" src="images/profile-avatar.jpg" alt="Avatar">
                             <div class="header__profile-info">
-                                <div class="header__profile-name">
+                                <span class="header__profile-name">
                                     Taofiq Hakim
-                                </div>
-                                <div class="header__profile-balance">
+                                </span>
+                                <span class="header__profile-balance">
                                     $20.45
-                                </div>
+                                </span>
                             </div>
                         </a>
                     </div>
@@ -61,8 +61,8 @@
 
         <nav class="header__nav">
             <div class="container">
-                <div class="header__nav-inner">
-                    <ul class="header__menu">
+                <div class="header__nav-inner d-flex">
+                    <ul class="header__menu d-flex">
                         <li class="header__menu-item">
                             <a href="#" class="header__menu-link">Home</a>
                         </li>
@@ -84,8 +84,11 @@
                             Search product here
                         </label>
                         <input class="search__input" id="search" type="search" placeholder="Search product here...">
+                        <label class="search__label" for="search">
+                            Search product here
+                        </label>
                         <button class="search__submit" type="submit">
-                            <span class="lnr lnr-magnifier"></span>
+                            <span class="lnr lnr-magnifier search__submit-icon"></span>
                         </button>
                     </form>
                 </div>
@@ -105,23 +108,23 @@
                     MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                 </p>
                 <div class="intro__links">
-                    <a href="#" class="intro__link intro__link--white">
+                    <a href="#" class="btn btn--white intro__link">
                         View All Products
                     </a>
-                    <a href="#" class="intro__link intro__link--transparent">
+                    <a href="#" class="btn btn--transparent intro__link">
                         Popular Products
                     </a>
                 </div>
 
                 <div class="intro__search">
-                    <div class="intro__decor intro__decor--sm"></div>
-                    <div class="intro__decor intro__decor--bg"></div>
-                    <form class="intro__search-main" action="#">
+                    <form class="intro__search-main d-flex" action="#">
                         <label class="intro__search-label" for="search-input">search your product</label>
                         <input class="intro__search-input" id="search-input" type="search" name="search" placeholder="Search your products">
                         <label class="intro__search-label" for="search-select">search your product</label>
                         <select class="intro__search-select" name="search-select" id="search-select">
                             <option value="all">All Categories</option>
+                            <option value="all">Cat 1</option>
+                            <option value="all">Cat 2</option>
                         </select>
                         <button class="intro__search-btn" type="submit">Search Now</button>
                     </form>
@@ -138,27 +141,27 @@
                         <div class="advantages__title">
                             Best UX Research
                         </div>
-                        <div class="advantages__text">
+                        <p class="advantages__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
+                        </p>
                     </li>
                     <li class="advantages__item">
                         <img class="advantages__img advantages__img--responsive" src="images/advantages-responsive.jpg" alt="responsive">
                         <div class="advantages__title">
                             Fully Responsive
                         </div>
-                        <div class="advantages__text">
+                        <p class="advantages__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
+                        </p>
                     </li>
                     <li class="advantages__item">
                         <img class="advantages__img advantages__img--buy-sell" src="images/advantages-buy-sell.jpg" alt="buy-sell">
                         <div class="advantages__title">
                             Buy & Sell Easily
                         </div>
-                        <div class="advantages__text">
+                        <p class="advantages__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
-                        </div>
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -463,7 +466,7 @@
                     </div>
                 </div>
                 <div class="newest__btn-inner">
-                    <a class="newest__btn" href="#">
+                    <a class="btn btn--blue newest__btn" href="#">
                         All New Products
                     </a>
                 </div>
