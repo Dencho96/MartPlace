@@ -1,0 +1,113 @@
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
+    margin-bottom: 31px;
+    max-width: 361px;
+    &__img {
+        width: 361px;
+        height: 230px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__info {
+        padding: 27px 39px 0 29px;
+        background-color: #fff;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        @include link-transition;
+    }
+    &__about {
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+    // &__profile {
+    //     align-items: center;
+    // }
+    // &__author-avatar {
+    //     width: 28px;
+    //     height: 28px;
+    //     margin-right: 10px;
+    //     border-radius: 50%;
+    //     object-fit: cover;
+    // }
+    // &__author-name {
+    //     margin-right: 18px;
+    //     font-size: 15px;
+    //     line-height: 22px;
+    //     @include link-transition;
+    // }
+    &__type {
+        height: 16px;
+        width: 100px;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        margin-bottom: 28px;
+        color: $gray-text;
+        line-height: 30px;
+    }
+    &__category {
+        display: flex;
+        margin-bottom: 44px;
+    }
+    &__category-item {
+        padding: 5px 14px 6px 17px;
+        background-color: #f1f3f6;
+        border-radius: 14px;
+        font-size: 15px;
+        color: #868c96;
+        &+& {
+            margin-left: 7px;
+        }
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        padding: 17px 30px 16px;
+        background-color: #fff;
+        border-top: 1px solid #ececec;
+    }
+    &__price {
+        margin: 0 16px 0 3px;
+        padding: 4px 15px 5px 14px;
+        background-color: rgba(#0674ec, .1);
+        border-radius: 15px;
+        color: $blue;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+    &__likes,
+    &__sells {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    &__likes {
+        margin-right: 5px;
+    }
+    &__likes-icon {
+        color: #7347c1;
+        margin-right: 5px;
+    }
+    &__sells {
+        color: $blue;
+        margin-left: auto;
+    }
+    &__sells-icon {
+        margin-right: 7px;
+    }
+    &__rating {
+        padding: 0;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}

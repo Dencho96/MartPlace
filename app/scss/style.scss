@@ -1,7 +1,9 @@
 @import 'fonts';
 @import 'vars';
-@import 'global';
 @import 'mixins';
+@import 'global';
+@import 'componenets/product';
+@import 'componenets/profile';
 //header styles start
 .header {
     &__top {
@@ -72,14 +74,15 @@
     &__profile {
         justify-content: space-between;
         align-items: center;
+        margin-right: 7px;
     }
     &__profile-avatar {
         margin-right: 22px;
         width: 50px;
         height: 50px;
-        border-radius: 50%;
     }
     &__profile-name {
+        margin-right: 0;
         display: block;
         color: #333;
         font-weight: 500;
@@ -174,7 +177,7 @@
         font-weight: 500;
     }
     &__links {
-        margin-bottom: 235px;
+        margin-bottom: 97px;
     }
     &__link {
         &+& {
@@ -182,57 +185,38 @@
         }
     }
     //intro search form start
-    &__search {
-        height: 1px;
-        //пришлось поставить высоту, чтобы сделать через марджин от ссылок
-        position: relative;
-        max-width: 1140px;
-        margin: 0 auto;
-    }
-    // &__decor {
-    //     position: absolute;
-    //     height: 135px;
-    //     background-color: white;
-    //     opacity: 0.5;
-    //     border-radius: 6px;
-    //     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    //     z-index: 0;
-    //     &--sm {
-    //         width: 1080px;
-    //         bottom: -39px;
-    //         left: 30px;
-    //     }
-    //     &--bg {
-    //         width: 1110px;
-    //         bottom: -52px;
-    //         left: 15px;
-    //     }
+    // &__search {
+    //     height: 1px;
+    //     //пришлось поставить высоту, чтобы сделать через марджин от ссылок
+    //     position: relative;
+    //     max-width: 1140px;
+    //     margin: 0 auto;
     // }
-    &__search-main {
-        position: absolute;
+    &__search {
+        position: relative;
         z-index: 5;
         bottom: -69px;
         max-width: 1140px;
         width: 100%;
-        //почему-то max-width не сработал, скорей всего изза позиционирования
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
         padding: 40px;
         border-radius: 6px;
         background-color: #fff;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        &:after {
+        &::after {
             @include decor;
             max-width: 1080px;
             width: 100%;
-            bottom: -39px;
+            bottom: 30px;
             left: 30px;
         }
-        &:before {
+        &::before {
             @include decor;
             max-width: 1110px;
             width: 100%;
-            bottom: -52px;
+            bottom: 16px;
             left: 15px;
         }
     }
@@ -297,13 +281,10 @@
         }
     }
     &__img {
-        &--ux,
-        &--buy-sell {
-            margin: 45px 0 30px;
-        }
-        &--responsive {
-            margin: 41px 0 27px;
-        }
+        height: 120px;
+        margin: 45px 0 26px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     &__title {
         margin-bottom: 21px;
@@ -316,31 +297,25 @@
     }
 }
 
-//features start
-.features {
-    padding-top: 120px;
-    background-color: $gray;
-    &__menu {
-        min-height: 110px;
-        margin-bottom: 50px;
-        padding: 0 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    }
+.block-intro {
+    min-height: 110px;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
     &__title {
         font-size: 30px;
     }
-    &__nav {
+    &__slider-nav {
         margin-top: 7px;
         display: flex;
         text-align: center;
     }
-    &__nav-prev,
-    &__nav-next {
+    &__btn {
         width: 55px;
         height: 45px;
         padding-top: 15px;
@@ -349,7 +324,7 @@
         font-size: 14px;
         cursor: pointer;
         transition-property: background-color, outline, box-shadow;
-        transition: 0.3s;
+        transition-duration: 0.3s;
         &:hover {
             background-color: $btn-hover;
         }
@@ -360,201 +335,12 @@
         &:active {
             box-shadow: inset 0 7px #e2fbff;
         }
-    }
-    &__nav-prev {
-        border-radius: 23px 0 0 23px;
-    }
-    &__nav-next {
-        border-radius: 0 23px 23px 0;
-    }
-}
-
-.product {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 120px;
-    border-radius: 4px;
-    box-shadow: 0 2px 30px rgba(147, 155, 168, 0.1);
-    &--sm {
-        position: relative;
-        margin-bottom: 31px;
-        flex-direction: column;
-        max-width: 361px;
-        &:hover {
-            box-shadow: 0 0 20px 10px rgba(black, .1);
+        &--prev {
+            border-radius: 23px 0 0 23px;
         }
-    }
-    &__buttons {
-        display: none;
-        position: absolute;
-        top: 93px;
-        left: 45px;
-    }
-    &__buttons-item {
-        border-radius: 23px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-        padding: 15px 28px 15px 28px;
-        &--more {
-            border: 1px solid white;
-            color: #fff;
-            font-size: 15px;
-            font-weight: 500;
+        &--next {
+            border-radius: 0 23px 23px 0;
         }
-        &--live {
-            background-color: #fff;
-            color: $blue;
-            font-size: 15px;
-            font-weight: 500;
-        }
-        &+.product__buttons-item {
-            margin-left: 10px;
-        }
-    }
-    &__img {
-        width: 555px;
-        height: 450px;
-        &--sm {
-            width: 361px;
-            height: 230px;
-        }
-        &:hover {
-            opacity: 0.5;
-        }
-    }
-    .product__img-inner:hover>.product__buttons {
-        display: block;
-    }
-    // тут костыль вышел, но как сделать правильно так и не понял
-    &__info {
-        padding: 48px 50px 24px 49px;
-        background-color: #fff;
-        &--sm {
-            padding: 27px 39px 0 29px;
-        }
-    }
-    &__title {
-        margin-bottom: 15px;
-        font-size: 24px;
-        font-weight: 500;
-        @include link-transition;
-        &--sm {
-            font-size: 20px;
-        }
-    }
-    &__about {
-        display: flex;
-        align-items: center;
-        margin-bottom: 26px;
-    }
-    &__author-avatar {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-        border-radius: 50%;
-        &--sm {
-            width: 28px;
-            height: 28px;
-        }
-    }
-    &__author-name {
-        margin-right: 18px;
-        font-size: 15px;
-        line-height: 22px;
-        @include link-transition;
-    }
-    &__text {
-        margin-bottom: 34px;
-        color: $gray-text;
-        line-height: 30px;
-        &--sm {
-            margin-bottom: 28px;
-        }
-    }
-    &__category {
-        display: flex;
-        margin-bottom: 44px;
-    }
-    &__category-item {
-        padding: 5px 14px 6px 17px;
-        background-color: #f1f3f6;
-        border-radius: 14px;
-        font-size: 15px;
-        color: #868c96;
-        &+.product__category-item {
-            margin-left: 7px;
-        }
-    }
-    &__stats {
-        display: flex;
-        align-items: center;
-        padding-top: 23px;
-        border-top: 1px solid #ececec;
-        &--sm {
-            padding: 17px 30px 16px;
-            background-color: #fff;
-        }
-    }
-    &__price {
-        margin: 0 16px 0 3px;
-        padding: 5px 19px 6px 18px;
-        background-color: $blue;
-        border-radius: 16px;
-        color: #fff;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 22px;
-        &--sm {
-            padding: 4px 15px 5px 14px;
-            background-color: rgba(#0674ec, .1);
-            border-radius: 15px;
-            color: $blue;
-        }
-    }
-    &__likes {
-        margin-right: 17px;
-        .lnr {
-            color: #7347c1;
-            margin-right: 10px;
-            &--sm {
-                margin-right: 5px;
-            }
-        }
-    }
-    &__sells {
-        color: $blue;
-        .lnr {
-            margin-right: 7px;
-        }
-        &--sm {
-            margin-left: auto;
-        }
-    }
-    &__rating {
-        margin-left: auto;
-        padding: 0;
-        &--sm {
-            margin-left: 0;
-            margin-right: auto;
-        }
-    }
-}
-
-.newest {
-    padding-top: 120px;
-    background-color: #f6f7fb;
-    &__entrance {
-        min-height: 110px;
-        margin-bottom: 30px;
-        padding: 0 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
-    }
-    &__title {
-        font-size: 30px;
     }
     &__filter-by {
         margin: 0 25px 0 auto;
@@ -565,6 +351,81 @@
         height: 20px;
         background-image: url("../images/filter-dots.svg");
     }
+}
+
+//features start
+.features {
+    padding-top: 120px;
+    background-color: $gray;
+    &__product {
+        margin-bottom: 120px;
+        max-width: none;
+        flex-direction: row;
+    }
+    &__product-img {
+        width: 555px;
+        height: 450px;
+        object-fit: cover;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__product-info {
+        padding: 48px 50px 24px 49px;
+        background-color: #fff;
+    }
+    &__product-title {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        @include link-transition;
+    }
+    &__product-author-avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    &__product-text {
+        margin-bottom: 34px;
+    }
+    &__product-stats {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-top: 23px;
+    }
+    &__product-price {
+        margin-right: 20px;
+        padding: 5px 19px 6px 18px;
+        background-color: $blue;
+        border-radius: 16px;
+        color: #fff;
+    }
+    &__product-likes {
+        margin-right: 16px;
+    }
+    &__product-likes-icon {
+        margin-right: 10px;
+    }
+    &__product-sells {
+        margin-left: 0;
+    }
+    &__product-sells-icon {
+        margin-right: 7px;
+    }
+    &__product-rating {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+.newest {
+    padding-top: 120px;
+    background-color: #f6f7fb;
+    &__intro {
+        margin-bottom: 30px;
+    }
     &__filter {
         display: flex;
         flex-wrap: wrap;
@@ -574,7 +435,7 @@
         box-shadow: 0 1px 2px rgba(90, 93, 100, 0.1);
     }
     &__filter-item {
-        &+.newest__filter-item {
+        &+& {
             margin-left: 10px;
         }
     }
@@ -587,22 +448,22 @@
         color: #747b86;
         cursor: pointer;
         transition-property: background-color, color;
-        transition: 0.3s;
+        transition-duration: 0.3s;
         &.mixitup-control-active {
             background-color: $blue;
             color: #fff;
         }
     }
     &__product-inner {
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
     }
     &__btn-inner {
         text-align: center;
     }
     &__btn {
+        display: inline-block;
         @include btn-transition;
         margin-bottom: 120px;
     }
