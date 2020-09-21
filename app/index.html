@@ -186,17 +186,17 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <article class="swiper-slide product features__product">
-                            <img class="product__img features__product-img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-inner">
+                                <img class="product__img features__product-img" src="images/product-img.jpg" alt="One Page Template">
+                                <div class="product__img-buttons features__product-img-buttons">
+                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                </div>
+                            </div>
                             <div class="product__info features__product-info">
                                 <a class="product__title features__product-title" href="#">
                                     One Page Resume Template
                                 </a>
-                                <!-- <div class="product__about">
-                                    <img class="product__author-avatar features__product-author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
-                                    <a class="product__author-name" href="#">AazzTech</a>
-                                    <img class="product__type" src="images/type-wordpress.svg" alt="wordpress">
-                                </div> -->
-
                                 <div class="product__about">
                                     <a class="profile d-flex " href="#">
                                         <img class="profile__avatar features__product-author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
@@ -250,58 +250,58 @@
                 </div>
                 <ul class="newest__filter">
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-plugins">
+                        <button class="btn newest__button" type="button" data-filter=".category-plugins">
                             Plugins
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-wordpress">
+                        <button class="btn newest__button" type="button" data-filter=".category-wordpress">
                             WordPress
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-site-template">
+                        <button class="btn newest__button" type="button" data-filter=".category-site-template">
                             Site Template
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-psd-template">
+                        <button class="btn newest__button" type="button" data-filter=".category-psd-template">
                             PSD Template
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-joomla">
+                        <button class="btn newest__button" type="button" data-filter=".category-joomla">
                             Joomla
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-ui">
+                        <button class="btn newest__button" type="button" data-filter=".category-ui">
                             User Interface
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-loading">
+                        <button class="btn newest__button" type="button" data-filter=".category-loading">
                             Loading Page
                         </button>
                     </li>
                     <li class="newest__filter-item">
-                        <button class="newest__button" type="button" data-filter=".category-software">
+                        <button class="btn newest__button" type="button" data-filter=".category-software">
                             Software
                         </button>
                     </li>
                 </ul>
-                <div class="newest__product-inner">
 
-                    <article class="product product--sm mix category-plugins" data-order="1">
+                <div class="newest__product-inner d-flex">
+                    <article class="product mix category-plugins" data-order="1">
                         <div class="product__img-inner">
-                            <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">
-                            <!-- <div class="product__buttons">
-                                <a class="product__buttons-item product__buttons-item--more" href="#">More Info</a>
-                                <a class="product__buttons-item product__buttons-item--live" href="#">Live Demo</a>
-                            </div> -->
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
                         </div>
-                        <div class="product__info product__info--sm">
-                            <a class="product__title product__title--sm" href="#">
+                        <div class="product__info">
+                            <a class="product__title" href="#">
                                 E-commerce Shopping Cart
                             </a>
                             <div class="product__about">
@@ -315,7 +315,7 @@
                                 </a>
                                 <a class="product__type" href="#" style="background-image: url(images/type-plugin.svg);"></a>
                             </div>
-                            <div class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
                         </div>
                         <div class="product__stats">
                             <span class="product__price">
@@ -329,7 +329,192 @@
                             </button>
                         </div>
                     </article>
+                    <article class="product mix category-psd-template" data-order="2">
+                        <div class="product__img-inner">
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <a class="product__title" href="#">
+                                Marketify Coffee Shop
+                            </a>
+                            <div class="product__about">
+                                <a class="profile d-flex product__profile" href="#">
+                                    <img class="profile__avatar product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                    <div class="profile__info">
+                                        <span class="profile__name product__author-name">
+                                            EchoTheme
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="product__type" href="#" style="background-image: url(images/type-psd.svg);"></a>
+                            </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
+                        </div>
+                        <div class="product__stats">
+                            <span class="product__price">
+                                $18
+                            </span>
+                            <button class="product__likes" type="button">
+                                <span class="lnr lnr-heart product__likes-icon"></span>48
+                            </button>
+                            <button class="product__sells" type="button">
+                                <span class="lnr lnr-cart product__sells-icon"></span>50
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product mix category-site-template" data-order="3">
+                        <div class="product__img-inner">
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <a class="product__title" href="#">
+                                Bryson - Portfolio Template
+                            </a>
+                            <div class="product__about">
+                                <a class="profile d-flex product__profile" href="#">
+                                    <img class="profile__avatar product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                    <div class="profile__info">
+                                        <span class="profile__name product__author-name">
+                                            Artcorner
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="product__type" href="#" style="background-image: url(images/type-html.svg);"></a>
+                            </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
+                        </div>
+                        <div class="product__stats">
+                            <span class="product__price">
+                                $10
+                            </span>
+                            <button class="product__likes" type="button">
+                                <span class="lnr lnr-heart product__likes-icon"></span>56
+                            </button>
+                            <button class="product__sells" type="button">
+                                <span class="lnr lnr-cart product__sells-icon"></span>68
+                            </button>
+                        </div>
+                    </article>
 
+                    <article class="product mix category-plugins" data-order="1">
+                        <div class="product__img-inner">
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <a class="product__title" href="#">
+                                E-commerce Shopping Cart
+                            </a>
+                            <div class="product__about">
+                                <a class="profile d-flex product__profile" href="#">
+                                    <img class="profile__avatar product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                    <div class="profile__info">
+                                        <span class="profile__name product__author-name">
+                                            Theme-Valley
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="product__type" href="#" style="background-image: url(images/type-plugin.svg);"></a>
+                            </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
+                        </div>
+                        <div class="product__stats">
+                            <span class="product__price">
+                                $20
+                            </span>
+                            <button class="product__likes" type="button">
+                                <span class="lnr lnr-heart product__likes-icon"></span>90
+                            </button>
+                            <button class="product__sells" type="button">
+                                <span class="lnr lnr-cart product__sells-icon"></span>246
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product mix category-psd-template" data-order="2">
+                        <div class="product__img-inner">
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <a class="product__title" href="#">
+                                Marketify Coffee Shop
+                            </a>
+                            <div class="product__about">
+                                <a class="profile d-flex product__profile" href="#">
+                                    <img class="profile__avatar product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                    <div class="profile__info">
+                                        <span class="profile__name product__author-name">
+                                            EchoTheme
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="product__type" href="#" style="background-image: url(images/type-psd.svg);"></a>
+                            </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
+                        </div>
+                        <div class="product__stats">
+                            <span class="product__price">
+                                $18
+                            </span>
+                            <button class="product__likes" type="button">
+                                <span class="lnr lnr-heart product__likes-icon"></span>48
+                            </button>
+                            <button class="product__sells" type="button">
+                                <span class="lnr lnr-cart product__sells-icon"></span>50
+                            </button>
+                        </div>
+                    </article>
+                    <article class="product mix category-site-template" data-order="3">
+                        <div class="product__img-inner">
+                            <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
+                            <div class="product__img-buttons">
+                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
+                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            </div>
+                        </div>
+                        <div class="product__info">
+                            <a class="product__title" href="#">
+                                Bryson - Portfolio Template
+                            </a>
+                            <div class="product__about">
+                                <a class="profile d-flex product__profile" href="#">
+                                    <img class="profile__avatar product__author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                    <div class="profile__info">
+                                        <span class="profile__name product__author-name">
+                                            Artcorner
+                                        </span>
+                                    </div>
+                                </a>
+                                <a class="product__type" href="#" style="background-image: url(images/type-html.svg);"></a>
+                            </div>
+                            <p class="product__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue. </p>
+                        </div>
+                        <div class="product__stats">
+                            <span class="product__price">
+                                $10
+                            </span>
+                            <button class="product__likes" type="button">
+                                <span class="lnr lnr-heart product__likes-icon"></span>56
+                            </button>
+                            <button class="product__sells" type="button">
+                                <span class="lnr lnr-cart product__sells-icon"></span>68
+                            </button>
+                        </div>
+                    </article>
                     <!-- 
                     <div class="product product--sm mix category-psd-template" data-order="2">
                         <img class="product__img product__img--sm" src="images/product-img.jpg" alt="One Page Template">

@@ -180,6 +180,7 @@
         margin-bottom: 97px;
     }
     &__link {
+        display: inline-block;
         &+& {
             margin-left: 25px;
         }
@@ -366,9 +367,11 @@
         width: 555px;
         height: 450px;
         object-fit: cover;
-        &:hover {
-            opacity: 0.5;
-        }
+    }
+    &__product-img-buttons {
+        padding-top: 202px;
+        box-sizing: border-box;
+        height: 100%;
     }
     &__product-info {
         padding: 48px 50px 24px 49px;
@@ -455,6 +458,7 @@
         }
     }
     &__product-inner {
+        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 60px;
