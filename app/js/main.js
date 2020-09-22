@@ -1,15 +1,28 @@
-var mySwiper = new Swiper('.swiper-container', {
+// var mySwiper = new Swiper('.features__slider', {
+//     slidesPerView: 1,
+//     direction: 'horizontal',
+//     loop: true,
+//     autoplay: {
+//         delay: 3000,
+//     },
+//     navigation: {
+//         nextEl: '.features__slide-next',
+//         prevEl: '.features__slide-prev',
+//     },
+
+// })
+
+var mySwiperFeed = new Swiper('.followers-feed__slider', {
     slidesPerView: 1,
     direction: 'horizontal',
     loop: true,
-
-    // Navigation arrows
     navigation: {
-        nextEl: '.block-intro__btn--next',
-        prevEl: '.block-intro__btn--prev',
+        nextEl: '.followers-feed__slide-next',
+        prevEl: '.followers-feed__slide-prev',
     },
 
 })
+
 
 $(function() {
 
