@@ -475,10 +475,7 @@
 
 .followers-feed {
     background-color: $gray;
-    padding-top: 120px;
-    &__slider {
-        margin-bottom: 12px;
-    }
+    padding: 120px 0 89px;
     .product {
         box-sizing: border-box;
     }
@@ -489,5 +486,44 @@
         &+& {
             margin-left: 28px;
         }
+    }
+}
+
+.stats {
+    padding: 95px 0 95px;
+    text-align: center;
+    background-color: rgba(#0d0f13, 0.8);
+    font-size: 48px;
+    &__inner {
+        justify-content: space-between;
+    }
+    &__item {
+        &--gold {
+            color: $gold;
+        }
+        &--blue {
+            margin-left: 25px;
+            color: $light-blue;
+        }
+        &--green {
+            margin-left: 15px;
+            color: $light-green;
+        }
+        &--red {
+            color: $red;
+        }
+    }
+    &__icon {
+        display: block;
+        margin-bottom: 39px;
+    }
+    &__number {
+        display: block;
+        margin-bottom: 11px;
+        font-size: 36px;
+    }
+    &__title {
+        color: white;
+        font-size: 18px;
     }
 }
