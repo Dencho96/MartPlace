@@ -100,3 +100,15 @@ body {
 .red-text {
     color: $red;
 }
+
+.block__title {
+    margin-bottom: 22px;
+    font-size: 36px;
+}
+
+.block__text {
+    max-width: 675px;
+    margin: 0 auto 54px;
+    font-size: 16px;
+    line-height: 30px;
+}

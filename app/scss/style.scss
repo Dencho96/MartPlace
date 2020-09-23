@@ -600,16 +600,6 @@
 .feedback {
     padding-top: 112px;
     text-align: center;
-    &__title {
-        margin-bottom: 22px;
-        font-size: 36px;
-    }
-    &__text {
-        max-width: 675px;
-        margin: 0 auto 54px;
-        font-size: 16px;
-        line-height: 30px;
-    }
     &__inner {
         justify-content: space-between;
         margin-bottom: 61px;
@@ -652,5 +642,51 @@
     }
     &__btn {
         margin-bottom: 120px;
+    }
+}
+
+.news {
+    padding: 113px 0 120px;
+    text-align: center;
+    background-color: $gray;
+    &__item-text {
+        margin-bottom: 24px;
+    }
+    &__inner {
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    &__item-info-wrapper {
+        height: 180px;
+    }
+    &__item-stats {
+        display: block;
+        padding: 10px 30px 8px;
+        font-size: 15px;
+    }
+    &__item-stats-wrapper {
+        justify-content: space-between;
+    }
+    &__item-time,
+    &__item-info {
+        width: 100%;
+        padding: 12px 0 14px;
+    }
+    &__item-time {
+        border-right: 1px solid $gray;
+    }
+    &__item-icon {
+        margin-right: 7px;
+        color: $blue;
+    }
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-comments {
+        margin-left: 33px;
     }
 }
