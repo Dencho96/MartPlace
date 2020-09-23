@@ -499,19 +499,11 @@
         justify-content: space-between;
     }
     &__item {
-        &--gold {
-            color: $gold;
-        }
         &--blue {
             margin-left: 25px;
-            color: $light-blue;
         }
         &--green {
             margin-left: 15px;
-            color: $light-green;
-        }
-        &--red {
-            color: $red;
         }
     }
     &__icon {
@@ -542,6 +534,9 @@
         font-size: 16px;
         line-height: 30px;
     }
+    &__list {
+        margin-bottom: 82px;
+    }
     &__item {
         margin-bottom: 30px;
         padding-top: 45px;
@@ -564,5 +559,40 @@
     }
     &__text {
         margin-bottom: 60px;
+    }
+}
+
+.sell-buy {
+    text-align: center;
+    color: white;
+    &__sell,
+    &__buy {
+        padding-top: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__sell {
+        width: 100%;
+    }
+    &__buy {
+        width: 100%;
+    }
+    &__icon {
+        margin-bottom: 43px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    &__text {
+        margin: 0 auto 42px;
+        max-width: 580px;
+        line-height: 30px;
+    }
+    &__btn {
+        margin-bottom: 100px;
     }
 }
