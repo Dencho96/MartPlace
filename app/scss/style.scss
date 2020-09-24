@@ -736,3 +736,117 @@
         padding-right: 42px;
     }
 }
+
+.footer {
+    font-size: 15px;
+    line-height: 28px;
+    color: #ababab;
+    &__top {
+        padding-top: 125px;
+        background-color: #262b30;
+    }
+    &__column-wrapper {
+        padding-bottom: 118px;
+        justify-content: space-between;
+    }
+    &__column {
+        &--first {
+            margin-right: 21px;
+            max-width: 264px;
+            width: 100%;
+        }
+        &--last {
+            max-width: 362px;
+            width: 100%;
+        }
+        &--center {
+            max-width: 165px;
+            width: 100%;
+        }
+        &--second {
+            margin-right: 35px;
+        }
+    }
+    &__logo {
+        display: block;
+        margin: -10px 0 16px;
+    }
+    &__text {
+        margin: 0 0 19px;
+        &--last {
+            margin-bottom: 0;
+        }
+    }
+    &__contact {
+        position: relative;
+        display: block;
+        padding-left: 29px;
+        &+& {
+            margin-top: 5px;
+        }
+        &--phone {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 18px;
+                height: 17px;
+                background-image: url(../images/footer-phone-icon.png);
+            }
+        }
+        &--email {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 9px;
+                width: 17px;
+                height: 11px;
+                background-image: url(../images/footer-mail-icon.png);
+            }
+        }
+        &--location {
+            &::before {
+                content: "";
+                position: absolute;
+                left: 2px;
+                top: 22px;
+                width: 10px;
+                height: 17px;
+                background-image: url(../images/footer-marker-icon.png);
+            }
+        }
+    }
+    &__column-title {
+        margin-bottom: 25px;
+        font-size: 18px;
+        color: white;
+    }
+    &__menu-item {
+        &+& {
+            margin-top: 4px;
+        }
+    }
+    &__menu-link {
+        @include link-transition;
+    }
+    &__search-submit {
+        top: 34px;
+        right: -2px;
+    }
+    &__copyright {
+        padding-top: 35px;
+        text-align: center;
+        color: #999;
+        background-color: #192027;
+    }
+    &__copyright-text {
+        display: inline-block;
+        margin: 0 0 35px;
+    }
+    &__copyright-link {
+        color: white;
+        @include link-transition;
+    }
+}
