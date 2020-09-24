@@ -649,9 +649,6 @@
     padding: 113px 0 120px;
     text-align: center;
     background-color: $gray;
-    &__item-text {
-        margin-bottom: 24px;
-    }
     &__inner {
         justify-content: space-between;
     }
@@ -661,6 +658,14 @@
     }
     &__item-info-wrapper {
         height: 180px;
+        padding-top: 19px;
+    }
+    &__item-title {
+        margin-bottom: 23px;
+        line-height: 27px;
+    }
+    &__item-text {
+        margin-bottom: 24px;
     }
     &__item-stats {
         display: block;
@@ -688,5 +693,30 @@
     }
     &__item-comments {
         margin-left: 33px;
+    }
+}
+
+.promotion {
+    font-size: 24px;
+    &__inner {
+        justify-content: space-between;
+    }
+    &__item {
+        padding-top: 60px;
+        text-align: center;
+        max-width: 570px;
+        width: 100%;
+        &+& {
+            border-left: 1px solid $gray;
+        }
+    }
+    &__img {
+        margin-bottom: 25px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__title {
+        margin-bottom: 60px;
     }
 }
