@@ -1,16 +1,16 @@
-// var mySwiper = new Swiper('.features__slider', {
-//     slidesPerView: 1,
-//     direction: 'horizontal',
-//     loop: true,
-//     autoplay: {
-//         delay: 3000,
-//     },
-//     navigation: {
-//         nextEl: '.features__slide-next',
-//         prevEl: '.features__slide-prev',
-//     },
+var mySwiper = new Swiper('.features__slider', {
+    slidesPerView: 1,
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+    navigation: {
+        nextEl: '.features__slide-next',
+        prevEl: '.features__slide-prev',
+    },
 
-// })
+})
 
 var mySwiperFeed = new Swiper('.followers-feed__slider', {
     slidesPerView: 1,
