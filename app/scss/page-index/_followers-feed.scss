@@ -1,0 +1,16 @@
+@import '../vars';
+.followers-feed {
+    background-color: $gray;
+    padding: 120px 0 89px;
+    .product {
+        box-sizing: border-box;
+    }
+    &__btn {
+        background-color: $blue;
+    }
+    &__slider-product {
+        &+& {
+            margin-left: 28px;
+        }
+    }
+}

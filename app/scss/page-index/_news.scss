@@ -1,0 +1,51 @@
+@import '../vars';
+.news {
+    padding: 113px 0 120px;
+    text-align: center;
+    background-color: $gray;
+    &__inner {
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    &__infoc {
+        height: 180px;
+        padding-top: 19px;
+    }
+    &__item-title {
+        margin-bottom: 23px;
+        line-height: 27px;
+    }
+    &__item-text {
+        margin-bottom: 24px;
+    }
+    &__item-stats {
+        display: block;
+        padding: 10px 30px 8px;
+        font-size: 15px;
+    }
+    &__item-stats-wrapper {
+        justify-content: space-between;
+    }
+    &__item-time,
+    &__item-info {
+        width: 100%;
+        padding: 12px 0 14px;
+    }
+    &__item-time {
+        border-right: 1px solid $gray;
+    }
+    &__item-icon {
+        margin-right: 7px;
+        color: $blue;
+    }
+    &__item-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item-comments {
+        margin-left: 33px;
+    }
+}

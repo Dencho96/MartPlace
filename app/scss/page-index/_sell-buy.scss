@@ -1,0 +1,28 @@
+.sell-buy {
+    text-align: center;
+    color: white;
+    &__item {
+        width: 100%;
+        padding-top: 100px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__icon {
+        margin-bottom: 43px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    &__text {
+        margin: 0 auto 42px;
+        max-width: 580px;
+        line-height: 30px;
+    }
+    &__btn {
+        margin-bottom: 100px;
+    }
+}

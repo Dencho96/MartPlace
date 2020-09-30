@@ -1,0 +1,30 @@
+.stats {
+    padding: 95px 0 95px;
+    text-align: center;
+    background-color: rgba(#0d0f13, 0.8);
+    font-size: 48px;
+    &__inner {
+        justify-content: space-between;
+    }
+    &__item {
+        &--blue {
+            margin-left: 25px;
+        }
+        &--green {
+            margin-left: 15px;
+        }
+    }
+    &__icon {
+        display: block;
+        margin-bottom: 39px;
+    }
+    &__number {
+        display: block;
+        margin-bottom: 11px;
+        font-size: 36px;
+    }
+    &__title {
+        color: white;
+        font-size: 18px;
+    }
+}

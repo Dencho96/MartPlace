@@ -1,0 +1,102 @@
+@import '../vars';
+@import '../mixins';
+.intro {
+    padding-top: 170px;
+    // padding: 170px 0 235px;
+    background-image: linear-gradient(to left, #0030de 0%, #2e5afb 100%);
+    color: #f3f3f8;
+    text-align: center;
+    &__title {
+        max-width: 810px;
+        margin: 0 auto 33px;
+        font-size: 60px;
+        line-height: 70px;
+        color: #f3f3f8;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    &__title-attention {
+        display: block;
+        font-weight: 700;
+    }
+    &__text {
+        margin-bottom: 67px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    &__links {
+        margin-bottom: 97px;
+    }
+    &__link {
+        display: inline-block;
+        &+& {
+            margin-left: 25px;
+        }
+    }
+    &__search {
+        position: relative;
+        z-index: 5;
+        bottom: -69px;
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-radius: 6px;
+        background-color: #fff;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        &::after {
+            @include decor;
+            max-width: 1080px;
+            width: 100%;
+            bottom: 30px;
+            left: 30px;
+        }
+        &::before {
+            @include decor;
+            max-width: 1110px;
+            width: 100%;
+            bottom: 16px;
+            left: 15px;
+        }
+    }
+    &__search-label {
+        font-size: 0;
+    }
+    &__search-input,
+    &__search-select {
+        border: 1px solid gainsboro;
+        outline: transparent;
+    }
+    &__search-input {
+        max-width: 613px;
+        width: 100%;
+        padding: 19px 28px 18px;
+        border-radius: 4px 0 0 4px;
+        color: #676767;
+        @include form-transition;
+    }
+    &__search-select {
+        position: relative;
+        margin-right: 30px;
+        max-width: 195px;
+        width: 100%;
+        padding: 19px 20px;
+        margin-left: -1px;
+        color: $gray-text;
+        appearance: none;
+        border-radius: 0 4px 4px 0;
+        @include form-transition;
+    }
+    &__search-btn {
+        max-width: 223px;
+        width: 100%;
+        padding: 20px 0 20px;
+        background-color: #0674ec;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        @include btn-transition;
+    }
+}

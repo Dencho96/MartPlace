@@ -1,0 +1,47 @@
+.feedback {
+    padding-top: 112px;
+    text-align: center;
+    &__inner {
+        justify-content: space-between;
+        margin-bottom: 61px;
+    }
+    &__item {
+        position: relative;
+        max-width: 555px;
+        width: 100%;
+        padding: 50px 38px 0;
+        border-left: 2px solid $blue;
+        border-radius: 0 4px 4px 0;
+        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+        text-align: left;
+    }
+    &__profile {
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+    &__avatar {
+        width: 80px;
+        height: 80px;
+    }
+    &__profile-info {
+        margin-left: 8px;
+    }
+    &__name {
+        margin: -4px 0 12px;
+        display: block;
+        font-size: 20px;
+    }
+    &__icon {
+        position: absolute;
+        top: 46px;
+        right: 41px;
+        color: #e8e8e8;
+        font-size: 60px;
+    }
+    &__item-text {
+        margin-bottom: 44px;
+    }
+    &__btn {
+        margin-bottom: 120px;
+    }
+}

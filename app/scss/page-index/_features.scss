@@ -1,0 +1,67 @@
+.features {
+    padding-top: 120px;
+    background-color: $gray;
+    &__product {
+        margin-bottom: 120px;
+        max-width: none;
+        flex-direction: row;
+    }
+    &__img {
+        width: 555px;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__links {
+        padding-top: 202px;
+        box-sizing: border-box;
+        height: 100%;
+    }
+    &__info {
+        padding: 48px 50px 24px 49px;
+        background-color: #fff;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size: 24px;
+        font-weight: 500;
+        @include link-transition;
+    }
+    &__avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    &__text {
+        margin-bottom: 34px;
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-top: 23px;
+    }
+    &__price {
+        margin-right: 20px;
+        padding: 5px 19px 6px 18px;
+        background-color: $blue;
+        border-radius: 16px;
+        color: #fff;
+    }
+    &__likes {
+        margin-right: 16px;
+    }
+    &__likes-icon {
+        margin-right: 10px;
+    }
+    &__sells {
+        margin-left: 0;
+    }
+    &__sells-icon {
+        margin-right: 7px;
+    }
+    &__rating {
+        margin-left: auto;
+        margin-right: 0;
+    }
+}

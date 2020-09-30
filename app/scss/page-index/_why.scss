@@ -1,0 +1,48 @@
+.why {
+    padding: 114px 0 0;
+    text-align: center;
+    &__title {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+    &__text {
+        max-width: 675px;
+        margin: 0 auto 60px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    &__list {
+        margin-bottom: 82px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    &__item {
+        margin-bottom: 30px;
+        padding-top: 45px;
+        position: relative;
+        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    }
+    &__counter {
+        position: absolute;
+        left: 17px;
+        top: 2px;
+        opacity: 0.2;
+        color: #5c87f8;
+        font-size: 48px;
+        font-weight: 300;
+        &::before {
+            counter-increment: why-counter;
+            content: "0"counter(why-counter);
+        }
+    }
+    &__icon {
+        display: inline-block;
+        margin-bottom: 40px;
+        font-size: 60px;
+    }
+    &__text {
+        margin-bottom: 60px;
+    }
+}

@@ -1,0 +1,10 @@
+.advantages {
+    padding-top: 185px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 121px;
+        text-align: center;
+    }
+}

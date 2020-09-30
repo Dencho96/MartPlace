@@ -1,0 +1,55 @@
+.block-intro {
+    min-height: 110px;
+    margin-bottom: 50px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(108, 111, 115, 0.1);
+    &__title {
+        font-size: 30px;
+    }
+    &__slider-nav {
+        margin-top: 7px;
+        display: flex;
+        text-align: center;
+    }
+    &__btn {
+        width: 55px;
+        height: 45px;
+        background-color: #7347c1;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        transition-property: background-color, outline, box-shadow;
+        transition-duration: 0.3s;
+        &:hover {
+            background-color: $btn-hover;
+        }
+        &:focus {
+            outline: transparent;
+            background-color: $btn-hover;
+        }
+        &:active {
+            box-shadow: inset 0 7px #e2fbff;
+        }
+        &--prev {
+            border-radius: 23px 0 0 23px;
+        }
+        &--next {
+            border-radius: 0 23px 23px 0;
+        }
+    }
+    &__filter-by {
+        margin: 0 25px 0 auto;
+        color: #747b86;
+    }
+    &__icon {
+        width: 5px;
+        height: 20px;
+        background-image: url("../images/filter-dots.svg");
+    }
+}
