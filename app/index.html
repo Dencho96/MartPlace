@@ -15,8 +15,8 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner d-flex">
-                    <a class="header__logo" href="#">
-                        <img class="header__logo-img" src="images/header-logo.png" alt="Mart Place Logo">
+                    <a class="logo header__logo" href="#">
+                        <img class="logo" src="images/header-logo.png" alt="Mart Place Logo">
                     </a>
                     <a class="btn btn--blue header__seller" href="#">
                         Become a Seller
@@ -57,8 +57,43 @@
                 </div>
             </div>
         </div>
-
-        <nav class="header__nav">
+        <div class="header__bottom">
+            <div class="container">
+                <div class="header__bottom-inner d-flex">
+                    <ul class="header__nav d-flex">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Home</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">All Products</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Wordpress</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Features</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Pages</a>
+                        </li>
+                    </ul>
+                    <form class="main-form" action="#">
+                        <label class="main-form__label" for="search">
+                            Search product here
+                        </label>
+                        <input class="main-form__input" id="search" type="search" name="search" placeholder="Search product here...">
+                        <label class="main-form__label" for="search">
+                            Search product here
+                        </label>
+                        <button class="main-form__submit" type="submit">
+                            <span class="header__search-btn">Go</span>
+                            <span class="lnr lnr-magnifier main-form__submit-icon"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- <nav class="header__nav">
             <div class="container">
                 <div class="header__nav-inner d-flex">
                     <ul class="header__menu d-flex">
@@ -82,7 +117,7 @@
                         <label class="search__label" for="search">
                             Search product here
                         </label>
-                        <input class="search__input" id="search" type="search" placeholder="Search product here...">
+                        <input class="search__input" id="search" type="search" name="search" placeholder="Search product here...">
                         <label class="search__label" for="search">
                             Search product here
                         </label>
@@ -92,7 +127,7 @@
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav> -->
 
     </header>
 
@@ -124,7 +159,6 @@
                         <option value="1">Cat 1</option>
                         <option value="2">Cat 2</option>
                     </select>
-                    <label class="intro__search-label" for="intro__search-submit">search</label>
                     <button class="intro__search-btn" id="intro__search-submit" type="submit">Search Now</button>
                 </form>
 
@@ -134,33 +168,33 @@
         <section class="advantages">
             <div class="container">
                 <ul class="advantages__list">
-                    <li class="advantages__item">
-                        <div class="advantages__img" style="background-image: url(images/advantages-ux.jpg);"></div>
+                    <li class="description-item">
+                        <div class="description-item__img" style="background-image: url(images/advantages-ux.jpg);"></div>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Best UX Research
                         </div>
-                        <p class="advantages__text">
+                        <p class="description-item__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item">
-                        <div class="advantages__img" style="background-image: url(images/advantages-responsive.jpg);">
+                    <li class="description-item">
+                        <div class="description-item__img" style="background-image: url(images/advantages-responsive.jpg);">
                         </div>
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Fully Responsive
                         </div>
-                        <p class="advantages__text">
+                        <p class="description-item__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item">
-                        <div class="advantages__img" style="background-image: url(images/advantages-buy-sell.jpg);">
+                    <li class="description-item">
+                        <div class="description-item__img" style="background-image: url(images/advantages-buy-sell.jpg);">
                         </div>
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Buy & Sell Easily
                         </div>
-                        <p class="advantages__text">
+                        <p class="description-item__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
@@ -174,31 +208,31 @@
                         Weekly Featured Products
                     </div>
                     <div class="block-intro__slider-nav">
-                        <div class="block-intro__btn block-intro__btn--prev features__slide-prev">
+                        <button class="block-intro__btn block-intro__btn--prev">
                             <span class="lnr lnr-chevron-left"></span>
-                        </div>
-                        <div class="block-intro__btn block-intro__btn--next features__slide-next">
+                        </button>
+                        <button class="block-intro__btn block-intro__btn--next">
                             <span class="lnr lnr-chevron-right"></span>
-                        </div>
+                        </button>
                     </div>
                 </div>
                 <div class="swiper-container features__slider">
                     <div class="swiper-wrapper">
                         <article class="swiper-slide product features__product">
-                            <div class="product__img-inner">
-                                <img class="product__img features__product-img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons features__product-img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__head">
+                                <img class="product__img features__img" src="images/product-img.jpg" alt="One Page Template">
+                                <div class="product__links features__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
-                            <div class="product__info features__product-info">
-                                <a class="product__title features__product-title" href="#">
+                            <div class="product__info features__info">
+                                <a class="product__title features__title" href="#">
                                     One Page Resume Template
                                 </a>
                                 <div class="product__about">
                                     <a class="profile d-flex " href="#">
-                                        <img class="profile__avatar features__product-author-avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                        <img class="profile__avatar features__avatar" src="images/profile-avatar.jpg" alt="Avatar">
                                         <div class="profile__info">
                                             <span class="profile__name">
                                                 AazzTech
@@ -208,25 +242,73 @@
                                     <a class="product__type" href="#" style="background-image: url(images/type-wordpress.svg);"></a>
                                 </div>
 
-                                <p class="product__text features__product-text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet
+                                <p class="product__text features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet
                                     congue justo ut scelerisque.
                                 </p>
                                 <div class="product__category">
-                                    <a class="btn product__category-item" href="#">website</a>
-                                    <a class="btn product__category-item" href="#">plugin</a>
-                                    <a class="btn product__category-item" href="#">landing page</a>
+                                    <a class="btn product__tag" href="#">website</a>
+                                    <a class="btn product__tag" href="#">plugin</a>
+                                    <a class="btn product__tag" href="#">landing page</a>
                                 </div>
-                                <div class="product__stats features__product-stats">
-                                    <span class="product__price features__product-price">
+                                <div class="product__stats features__stats">
+                                    <span class="product__price features__price">
                                         $10 - $50
                                     </span>
-                                    <button class="product__likes features__product-likes">
-                                        <span class="lnr lnr-heart features__product-likes-icon"></span>46
+                                    <button class="product__likes features__likes">
+                                        <span class="lnr lnr-heart features__likes-icon"></span>46
                                     </button>
-                                    <button class="product__sells features__product-sells">
-                                        <span class="lnr lnr-cart features__product-sells-icon"></span>634
+                                    <button class="product__sells features__sells">
+                                        <span class="lnr lnr-cart features__sells-icon"></span>634
                                     </button>
-                                    <div class="product__rating features__product-rating">
+                                    <div class="product__rating features__rating">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="swiper-slide product features__product">
+                            <div class="product__head">
+                                <img class="product__img features__img" src="images/product-img2.jpg" alt="One Page Template">
+                                <div class="product__links features__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
+                                </div>
+                            </div>
+                            <div class="product__info features__info">
+                                <a class="product__title features__title" href="#">
+                                    Global Online Marketing
+                                </a>
+                                <div class="product__about">
+                                    <a class="profile d-flex " href="#">
+                                        <img class="profile__avatar features__avatar" src="images/profile-avatar.jpg" alt="Avatar">
+                                        <div class="profile__info">
+                                            <span class="profile__name">
+                                                Qwerty123
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a class="product__type" href="#" style="background-image: url(images/type-html.svg);"></a>
+                                </div>
+
+                                <p class="product__text features__text">Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet
+                                    congue justo ut scelerisque.
+                                </p>
+                                <div class="product__category">
+                                    <a class="btn product__tag" href="#">website</a>
+                                    <a class="btn product__tag" href="#">plugin</a>
+                                    <a class="btn product__tag" href="#">landing page</a>
+                                </div>
+                                <div class="product__stats features__stats">
+                                    <span class="product__price features__price">
+                                        $10 - $50
+                                    </span>
+                                    <button class="product__likes features__likes">
+                                        <span class="lnr lnr-heart features__likes-icon"></span>46
+                                    </button>
+                                    <button class="product__sells features__sells">
+                                        <span class="lnr lnr-cart features__sells-icon"></span>634
+                                    </button>
+                                    <div class="product__rating features__rating">
 
                                     </div>
                                 </div>
@@ -292,11 +374,11 @@
 
                 <div class="newest__product-inner d-flex">
                     <article class="product mix category-plugins" data-order="1">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -329,11 +411,11 @@
                         </div>
                     </article>
                     <article class="product mix category-psd-template" data-order="2">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -366,11 +448,11 @@
                         </div>
                     </article>
                     <article class="product mix category-site-template" data-order="3">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -404,11 +486,11 @@
                     </article>
 
                     <article class="product mix category-plugins" data-order="1">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -441,11 +523,11 @@
                         </div>
                     </article>
                     <article class="product mix category-psd-template" data-order="2">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -478,11 +560,11 @@
                         </div>
                     </article>
                     <article class="product mix category-site-template" data-order="3">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                            <div class="product__img-buttons">
-                                <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                            <div class="product__links">
+                                <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                <a class="btn btn--white product__link" href="#">Live Demo</a>
                             </div>
                         </div>
                         <div class="product__info">
@@ -542,11 +624,11 @@
                 <div class="swiper-container followers-feed__slider">
                     <div class="swiper-wrapper">
                         <article class="product mix category-plugins followers-feed__slider-product" data-order="1">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -579,11 +661,11 @@
                             </div>
                         </article>
                         <article class="product mix category-psd-template followers-feed__slider-product" data-order="2">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -616,11 +698,11 @@
                             </div>
                         </article>
                         <article class="product mix category-site-template followers-feed__slider-product" data-order="3">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -653,11 +735,11 @@
                             </div>
                         </article>
                         <article class="product mix category-plugins followers-feed__slider-product" data-order="1">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -690,11 +772,11 @@
                             </div>
                         </article>
                         <article class="product mix category-psd-template followers-feed__slider-product" data-order="2">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -727,11 +809,11 @@
                             </div>
                         </article>
                         <article class="product mix category-site-template followers-feed__slider-product" data-order="3">
-                            <div class="product__img-inner">
+                            <div class="product__head">
                                 <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
-                                <div class="product__img-buttons">
-                                    <a class="btn btn--transparent product__img-button" href="#">More Info</a>
-                                    <a class="btn btn--white product__img-button" href="#">Live Demo</a>
+                                <div class="product__links">
+                                    <a class="btn btn--transparent product__link" href="#">More Info</a>
+                                    <a class="btn btn--white product__link" href="#">Live Demo</a>
                                 </div>
                             </div>
                             <div class="product__info">
@@ -771,34 +853,34 @@
         <section class="stats">
             <div class="container">
                 <ul class="stats__inner d-flex">
-                    <div class="stats__item gold-text">
+                    <li class="stats__item gold-text">
                         <span class="lnr lnr-briefcase stats__icon"></span>
                         <span class="stats__number">38,436</span>
                         <div class="stats__title">
                             items for sale
                         </div>
-                    </div>
-                    <div class="stats__item light-blue-text ">
+                    </li>
+                    <li class="stats__item light-blue-text ">
                         <span class="lnr lnr-cloud-download stats__icon"></span>
                         <span class="stats__number">3,736</span>
                         <div class="stats__title">
                             total sales
                         </div>
-                    </div>
-                    <div class="stats__item green-text">
+                    </li>
+                    <li class="stats__item green-text">
                         <span class="lnr lnr-smile stats__icon"></span>
                         <span class="stats__number">2,736</span>
                         <div class="stats__title">
                             happy customers
                         </div>
-                    </div>
-                    <div class="stats__item red-text">
+                    </li>
+                    <li class="stats__item red-text">
                         <span class="lnr lnr-users stats__icon"></span>
                         <span class="stats__number">25,736</span>
                         <div class="stats__title">
                             members
                         </div>
-                    </div>
+                    </li>
                 </ul>
 
             </div>
@@ -811,87 +893,75 @@
                 <p class="why__text">
                     Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
                 </p>
-                <ul class="advantages__list why__list">
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            01
-                        </span>
+                <ul class="why__list">
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
 
                         <span class="lnr lnr-license why__icon blue-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             One Time Payment
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            02
-                        </span>
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
                         <span class="lnr lnr-magic-wand why__icon violet-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Quality Products
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            03
-                        </span>
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
 
                         <span class="lnr lnr-lock why__icon green-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             100% Secure Payment
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            04
-                        </span>
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
 
                         <span class="lnr lnr-chart-bars why__icon gold-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Well Organized Code
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            05
-                        </span>
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
 
                         <span class="lnr lnr-leaf why__icon light-blue-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Life Time Free Update
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
-                    <li class="advantages__item why__item">
-                        <span class="why__counter">
-                            06
-                        </span>
+                    <li class="description-item why__item">
+                        <span class="why__counter"></span>
 
                         <span class="lnr lnr-phone why__icon red-text"></span>
 
-                        <div class="advantages__title">
+                        <div class="description-item__title">
                             Fast and Friendly Support
                         </div>
-                        <p class="advantages__text why__text">
+                        <p class="description-item__text why__text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
                         </p>
                     </li>
@@ -916,10 +986,10 @@
         </section>
         <section class="feedback">
             <div class="container">
-                <div class="feedback__title block__title">
+                <div class="feedback__title block-title">
                     Our Clients <span class="blue-text">Feedback</span>
                 </div>
-                <p class="feedback__text block__text">
+                <p class="feedback__text block-text">
                     Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
                 </p>
                 <div class="feedback__inner d-flex">
@@ -936,7 +1006,7 @@
                             </div>
                         </a>
                         <span class="lnr lnr-bubble feedback__icon"></span>
-                        <p class="block__text feedback__item-text">
+                        <p class="block-text feedback__item-text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
                         </p>
                     </div>
@@ -953,7 +1023,7 @@
                             </div>
                         </a>
                         <span class="lnr lnr-bubble feedback__icon"></span>
-                        <p class="block__text feedback__item-text">
+                        <p class="block-text feedback__item-text">
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is the laoreet elit metus. Nunc placerat mi is id nisi interdum is mollis. Praesent the pharetra, justo ut scelerisque.
                         </p>
                     </div>
@@ -966,16 +1036,16 @@
         </section>
         <section class="news">
             <div class="container">
-                <div class="news__title block__title">Latest <span class="blue-text">News</span></div>
-                <p class="news__text block__text">
+                <div class="news__title block-title">Latest <span class="blue-text">News</span></div>
+                <p class="news__text block-text">
                     Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.
                 </p>
                 <div class="news__inner d-flex">
                     <article class="product mix category-plugins news__item" data-order="1">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
                         </div>
-                        <div class="product__info news__item-info-wrapper">
+                        <div class="product__info news__info">
                             <a class="product__title news__item-title" href="#">
                                 Web Design Trends in 2017
                             </a>
@@ -988,9 +1058,9 @@
                                     <span class="lnr lnr-clock news__item-icon"></span>24 Feb 2017
                                 </time>
                                 <div class="news__item-info">
-                                    <div class="news__item-comments">
+                                    <a class="news__item-comments" href="#">
                                         <span class="lnr lnr-bubble"></span> 45
-                                    </div>
+                                    </a>
                                     <div class="news__item-views">
                                         <span class="lnr lnr-eye"></span> 345
                                     </div>
@@ -1000,10 +1070,10 @@
                         </div>
                     </article>
                     <article class="product mix category-plugins news__item" data-order="1">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
                         </div>
-                        <div class="product__info news__item-info-wrapper">
+                        <div class="product__info news__info">
                             <a class="product__title news__item-title" href="#">
                                 The best advices to start your own project
                             </a>
@@ -1016,9 +1086,9 @@
                                     <span class="lnr lnr-clock news__item-icon"></span>15 Mar 2017
                                 </time>
                                 <div class="news__item-info">
-                                    <div class="news__item-comments">
+                                    <a class="news__item-comments" href="#">
                                         <span class="lnr lnr-bubble"></span> 45
-                                    </div>
+                                    </a>
                                     <div class="news__item-views">
                                         <span class="lnr lnr-eye"></span> 345
                                     </div>
@@ -1028,10 +1098,10 @@
                         </div>
                     </article>
                     <article class="product mix category-plugins news__item" data-order="1">
-                        <div class="product__img-inner">
+                        <div class="product__head">
                             <img class="product__img" src="images/product-img.jpg" alt="One Page Template">
                         </div>
-                        <div class="product__info news__item-info-wrapper">
+                        <div class="product__info news__info">
                             <a class="product__title news__item-title" href="#">
                                 Best Related Post Plugin
                             </a>
@@ -1044,9 +1114,9 @@
                                     <span class="lnr lnr-clock news__item-icon"></span>20 Dec 2016
                                 </time>
                                 <div class="news__item-info">
-                                    <div class="news__item-comments">
+                                    <a class="news__item-comments" href="$">
                                         <span class="lnr lnr-bubble"></span> 45
-                                    </div>
+                                    </a>
                                     <div class="news__item-views">
                                         <span class="lnr lnr-eye"></span> 345
                                     </div>
@@ -1076,7 +1146,7 @@
         </section>
         <section class="join">
             <div class="container">
-                <div class="join__title block__title">Ready to Join Our Marketplace!</div>
+                <div class="join__title block-title">Ready to Join Our Marketplace!</div>
                 <p class="join__text">Over 25,000 designers and developers trust the MartPlace.</p>
                 <a class="btn btn--white join__btn" href="#">Join Us Today</a>
             </div>
@@ -1086,20 +1156,23 @@
     <footer class="footer">
         <div class="footer__top">
             <div class="container">
-                <div class="footer__column-wrapper d-flex">
+                <div class="footer__inner d-flex">
                     <div class="footer__column footer__column--first">
-                        <a class="footer__logo" href="#">
-                            <img class="footer__logo-img" src="images/footer-logo.png" alt="MartPlace Logo">
+                        <a class="logo footer__logo" href="#">
+                            <img class="logo" src="images/footer-logo.png" alt="MartPlace Logo">
                         </a>
                         <p class="footer__text">
                             Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque the mattis, leo quam.
                         </p>
-                        <a class="footer__contact footer__contact--phone" href="tel:67898752235">Phone:
+                        <address class="footer__contacts">
+                            <a class="footer__contact footer__contact--phone" href="tel:67898752235">Phone:
                             +6789-875-2235</a>
                         <a class="footer__contact footer__contact--email" href="mailto:support@aazztech.com">support@aazztech.com</a>
                         <a class="footer__contact footer__contact--location" href="http://www.google.com/search?q=202+New+Hampshire+Avenue+Northwest+#100,+New+York-2573">202
                             New Hampshire Avenue
                             Northwest #100, New York-2573</a>
+                        </address>
+
                     </div>
                     <div class="footer__column footer__column--second footer__column--center">
                         <div class="footer__column-title">
@@ -1192,15 +1265,15 @@
                         <p class="footer__text footer__text--last">
                             Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!
                         </p>
-                        <form class="search footer__search" action="#">
-                            <label class="search__label" for="search">
+                        <form class="main-form footer__email" action="#">
+                            <label class="main-form__label" for="search">
                                 Enter email
                             </label>
-                            <input class="search__input footer__search-input" id="search" type="search" placeholder="Enter email">
-                            <label class="search__label" for="search">
+                            <input class="main-form__input footer__email-input" id="search" type="search" placeholder="Enter email">
+                            <label class="main-form__label" for="search">
                                 Enter
                             </label>
-                            <button class="search__submit footer__search-submit" type="submit">
+                            <button class="main-form__submit footer__email-submit" type="submit">
                                 Submit
                             </button>
                         </form>

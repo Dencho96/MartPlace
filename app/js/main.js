@@ -3,7 +3,7 @@ var mySwiper = new Swiper('.features__slider', {
     direction: 'horizontal',
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 7000,
     },
     navigation: {
         nextEl: '.features__slide-next',

@@ -24,6 +24,7 @@ body {
     font-family: Quicksand, sans-serif;
     font-size: 16px;
     font-weight: 400;
+    counter-reset: why-counter;
 }
 
 .container {
@@ -105,12 +106,12 @@ body {
     color: #7347c1;
 }
 
-.block__title {
+.block-title {
     margin-bottom: 22px;
     font-size: 36px;
 }
 
-.block__text {
+.block-text {
     max-width: 675px;
     margin: 0 auto 54px;
     font-size: 16px;

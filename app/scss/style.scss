@@ -2,119 +2,11 @@
 @import 'vars';
 @import 'mixins';
 @import 'global';
-@import 'componenets/product';
-@import 'componenets/profile';
-//header styles start
-.header {
-    &__top {
-        background-color: $header-top;
-    }
-    &__top-inner {
-        min-height: 100px;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__logo {
-        margin-left: 7px;
-    }
-    &__seller {
-        margin: -3px 47px 0 auto;
-        padding: 3px 17px;
-        font-size: 14px;
-        line-height: 28px;
-        border-radius: 18px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        @include btn-transition;
-    }
-    &__info {
-        justify-content: space-between;
-    }
-    &__icons {
-        margin-right: 48px;
-        align-items: center;
-    }
-    &__icons-item {
-        position: relative;
-        font-size: 20px;
-        &+.header__icons-item {
-            margin-left: 32px;
-        }
-    }
-    &__icons-link {
-        transition: color 0.3s;
-        &:hover {
-            color: red;
-        }
-    }
-    &__icons-counter {
-        position: absolute;
-        top: -16px;
-        min-width: 22px;
-        height: 22px;
-        padding: 5px;
-        padding-top: 2px;
-        border-radius: 11px;
-        color: white;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
-        &--red {
-            background-color: $red;
-            left: 11px;
-        }
-        &--green {
-            background-color: $green;
-            left: 14px;
-        }
-        &--blue {
-            background-color: $blue;
-            left: 15px;
-        }
-    }
-    &__profile {
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 7px;
-    }
-    &__profile-avatar {
-        margin-right: 22px;
-        width: 50px;
-        height: 50px;
-    }
-    &__profile-name {
-        margin-right: 0;
-        display: block;
-        color: #333;
-        font-weight: 500;
-    }
-    &__profile-balance {
-        color: #0674ec;
-        font-size: 15px;
-    }
-    &__nav-inner {
-        justify-content: space-between;
-        align-items: center;
-        min-height: 80px;
-    }
-    &__menu {
-        justify-content: space-between;
-    }
-    &__menu-item {
-        font-size: 15px;
-        font-weight: 500;
-        font-size: 15px;
-        font-weight: 500;
-        text-transform: uppercase;
-        &+& {
-            margin-left: 34px;
-        }
-    }
-    &__menu-link {
-        @include link-transition;
-    }
-}
-
-.search {
+@import 'components/product';
+@import 'components/profile';
+@import 'components/description-item';
+@import 'components/header';
+.main-form {
     position: relative;
     max-width: 360px;
     width: 100%;
@@ -141,12 +33,12 @@
         border: none;
         border-radius: 23px;
         cursor: pointer;
-        .search__submit-icon {
-            color: #fff;
-            font-size: 15px;
-            line-height: 30px;
-        }
         @include btn-transition;
+    }
+    &__submit-icon {
+        color: #fff;
+        font-size: 15px;
+        line-height: 30px;
     }
 }
 
@@ -164,6 +56,7 @@
         font-size: 60px;
         line-height: 70px;
         color: #f3f3f8;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     }
     &__title-attention {
         display: block;
@@ -183,14 +76,6 @@
             margin-left: 25px;
         }
     }
-    //intro search form start
-    // &__search {
-    //     height: 1px;
-    //     //пришлось поставить высоту, чтобы сделать через марджин от ссылок
-    //     position: relative;
-    //     max-width: 1140px;
-    //     margin: 0 auto;
-    // }
     &__search {
         position: relative;
         z-index: 5;
@@ -271,30 +156,30 @@
         margin-bottom: 121px;
         text-align: center;
     }
-    &__item {
-        max-width: 360px;
-        padding: 0 32px 0 32px;
-        border-radius: 4px;
-        transition: box-shadow 0.2s;
-        &:hover {
-            box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
-        }
-    }
-    &__img {
-        height: 120px;
-        margin: 45px 0 26px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    &__title {
-        margin-bottom: 21px;
-        font-size: 24px;
-    }
-    &__text {
-        margin-bottom: 40px;
-        line-height: 30px;
-        color: $gray-text;
-    }
+    // &__item {
+    //     max-width: 360px;
+    //     padding: 0 32px 0 32px;
+    //     border-radius: 4px;
+    //     transition: box-shadow 0.2s;
+    //     &:hover {
+    //         box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
+    //     }
+    // }
+    // &__img {
+    //     height: 120px;
+    //     margin: 45px 0 26px;
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    // }
+    // &__title {
+    //     margin-bottom: 21px;
+    //     font-size: 24px;
+    // }
+    // &__text {
+    //     margin-bottom: 40px;
+    //     line-height: 30px;
+    //     color: $gray-text;
+    // }
 }
 
 .block-intro {
@@ -318,11 +203,11 @@
     &__btn {
         width: 55px;
         height: 45px;
-        padding-top: 15px;
         background-color: #7347c1;
         color: white;
         font-size: 14px;
         cursor: pointer;
+        border: none;
         transition-property: background-color, outline, box-shadow;
         transition-duration: 0.3s;
         &:hover {
@@ -362,61 +247,61 @@
         max-width: none;
         flex-direction: row;
     }
-    &__product-img {
+    &__img {
         width: 555px;
-        height: 450px;
+        height: 100%;
         object-fit: cover;
     }
-    &__product-img-buttons {
+    &__links {
         padding-top: 202px;
         box-sizing: border-box;
         height: 100%;
     }
-    &__product-info {
+    &__info {
         padding: 48px 50px 24px 49px;
         background-color: #fff;
     }
-    &__product-title {
+    &__title {
         margin-bottom: 15px;
         font-size: 24px;
         font-weight: 500;
         @include link-transition;
     }
-    &__product-author-avatar {
+    &__avatar {
         width: 30px;
         height: 30px;
         margin-right: 10px;
         border-radius: 50%;
     }
-    &__product-text {
+    &__text {
         margin-bottom: 34px;
     }
-    &__product-stats {
+    &__stats {
         display: flex;
         align-items: center;
         padding: 0;
         padding-top: 23px;
     }
-    &__product-price {
+    &__price {
         margin-right: 20px;
         padding: 5px 19px 6px 18px;
         background-color: $blue;
         border-radius: 16px;
         color: #fff;
     }
-    &__product-likes {
+    &__likes {
         margin-right: 16px;
     }
-    &__product-likes-icon {
+    &__likes-icon {
         margin-right: 10px;
     }
-    &__product-sells {
+    &__sells {
         margin-left: 0;
     }
-    &__product-sells-icon {
+    &__sells-icon {
         margin-right: 7px;
     }
-    &__product-rating {
+    &__rating {
         margin-left: auto;
         margin-right: 0;
     }
@@ -534,6 +419,10 @@
     }
     &__list {
         margin-bottom: 82px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
     }
     &__item {
         margin-bottom: 30px;
@@ -549,6 +438,10 @@
         color: #5c87f8;
         font-size: 48px;
         font-weight: 300;
+        &::before {
+            counter-increment: why-counter;
+            content: "0"counter(why-counter);
+        }
     }
     &__icon {
         display: inline-block;
@@ -654,7 +547,7 @@
         text-align: left;
         margin-bottom: 0;
     }
-    &__item-info-wrapper {
+    &__infoc {
         height: 180px;
         padding-top: 19px;
     }
@@ -743,7 +636,7 @@
         padding-top: 125px;
         background-color: #262b30;
     }
-    &__column-wrapper {
+    &__inner {
         padding-bottom: 118px;
         justify-content: space-between;
     }
@@ -779,6 +672,7 @@
     &__contact {
         position: relative;
         display: block;
+        font-style: normal;
         padding-left: 29px;
         &+& {
             margin-top: 5px;
@@ -830,13 +724,13 @@
     &__menu-link {
         @include link-transition;
     }
-    &__search {
+    &__emailemail {
         margin-bottom: 15px;
     }
-    &__search-input {
+    &__email-input {
         padding: 7px 94px 9px 29px;
     }
-    &__search-submit {
+    &__email-submit {
         padding: 15px 30px 16px;
         color: white;
         top: 33px;
