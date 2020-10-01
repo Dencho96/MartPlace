@@ -1,4 +1,3 @@
-@import '../vars';
 .followers-feed {
     background-color: $gray;
     padding: 120px 0 89px;
@@ -12,5 +11,8 @@
         &+& {
             margin-left: 28px;
         }
+    }
+    &__btn {
+        background-color: $blue;
     }
 }

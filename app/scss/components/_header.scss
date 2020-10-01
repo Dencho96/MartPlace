@@ -13,6 +13,7 @@
     &__seller {
         margin: -3px 47px 0 auto;
         padding: 3px 17px;
+        min-width: 0;
         font-size: 14px;
         line-height: 28px;
         border-radius: 18px;
@@ -23,20 +24,25 @@
         justify-content: space-between;
     }
     &__icons {
+        @include list-reset;
         margin-right: 48px;
         align-items: center;
     }
     &__icons-item {
         position: relative;
         font-size: 20px;
-        &+.header__icons-item {
+        &+& {
             margin-left: 32px;
         }
     }
     &__icons-link {
+        outline: transparent;
         transition: color 0.3s;
         &:hover {
             color: red;
+        }
+        &:focus {
+            color: gold;
         }
     }
     &__icons-counter {
@@ -87,19 +93,25 @@
     &__bottom-inner {
         justify-content: space-between;
         align-items: center;
-        min-height: 80px;
+        min-height: 78px;
     }
     &__nav {
+        position: relative;
+        @include list-reset;
         justify-content: space-between;
     }
     &__nav-item {
-        font-size: 15px;
-        font-weight: 500;
+        height: 100%;
         font-size: 15px;
         font-weight: 500;
         text-transform: uppercase;
+        transition-property: height, top;
+        transition-duration: 1s;
         &+& {
             margin-left: 34px;
+        }
+        &:hover .drop-down {
+            display: block;
         }
     }
     &__nav-inner {
@@ -113,20 +125,4 @@
     &__search-btn {
         font-size: 0;
     }
-    // &__menu {
-    //     justify-content: space-between;
-    // }
-    // &__menu-item {
-    //     font-size: 15px;
-    //     font-weight: 500;
-    //     font-size: 15px;
-    //     font-weight: 500;
-    //     text-transform: uppercase;
-    //     &+& {
-    //         margin-left: 34px;
-    //     }
-    // }
-    // &__menu-link {
-    //     @include link-transition;
-    // }
 }

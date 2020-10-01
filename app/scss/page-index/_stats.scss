@@ -1,9 +1,10 @@
 .stats {
     padding: 95px 0 95px;
     text-align: center;
-    background-color: rgba(#0d0f13, 0.8);
+    background-color: #212225;
     font-size: 48px;
     &__inner {
+        @include list-reset;
         justify-content: space-between;
     }
     &__item {

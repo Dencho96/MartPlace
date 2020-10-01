@@ -2,12 +2,21 @@
     padding-top: 120px;
     background-color: $gray;
     &__product {
+        box-sizing: border-box;
         margin-bottom: 120px;
         max-width: none;
         flex-direction: row;
     }
+    &__head {
+        max-width: 555px;
+        max-height: 455px;
+    }
+    &__img,
+    &__links {
+        border-radius: 4px 0 0 4px;
+    }
     &__img {
-        width: 555px;
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -17,8 +26,10 @@
         height: 100%;
     }
     &__info {
+        max-width: 586px;
         padding: 48px 50px 24px 49px;
-        background-color: #fff;
+        border-radius: 0 4px 4px 0;
+        background-color: white;
     }
     &__title {
         margin-bottom: 15px;

@@ -6,14 +6,19 @@
     margin-bottom: 31px;
     max-width: 361px;
     &__head {
+        max-height: 230px;
         position: relative;
         &:hover .product__links {
             display: block;
         }
     }
+    &__img,
+    &__links {
+        border-radius: 4px 4px 0 0;
+    }
     &__img {
-        width: 361px;
-        height: 230px;
+        width: 100%;
+        height: 100%;
     }
     &__links {
         display: none;
@@ -29,6 +34,7 @@
         opacity: 0.9;
     }
     &__link {
+        min-width: 0;
         padding: 12px 25px;
         &+& {
             margin-left: 14px;
@@ -50,26 +56,11 @@
         align-items: center;
         margin-bottom: 26px;
     }
-    // &__profile {
-    //     align-items: center;
-    // }
-    // &__author-avatar {
-    //     width: 28px;
-    //     height: 28px;
-    //     margin-right: 10px;
-    //     border-radius: 50%;
-    //     object-fit: cover;
-    // }
-    // &__author-name {
-    //     margin-right: 18px;
-    //     font-size: 15px;
-    //     line-height: 22px;
-    //     @include link-transition;
-    // }
     &__type {
         height: 16px;
         width: 100px;
         background-repeat: no-repeat;
+        outline: transparent;
     }
     &__text {
         margin-top: 0;
@@ -83,10 +74,14 @@
     }
     &__tag {
         padding: 5px 14px 6px 17px;
+        min-width: 0;
         background-color: #f1f3f6;
         border-radius: 14px;
         font-size: 15px;
         color: #868c96;
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+        @include tag-transition;
         &+& {
             margin-left: 7px;
         }
@@ -97,6 +92,7 @@
         padding: 17px 30px 16px;
         background-color: #fff;
         border-top: 1px solid #ececec;
+        border-radius: 0 0 4px 4px;
     }
     &__price {
         margin: 0 16px 0 3px;
@@ -112,7 +108,11 @@
     &__sells {
         border: none;
         background-color: transparent;
+        outline: transparent;
         cursor: pointer;
+        &:focus {
+            color: red;
+        }
     }
     &__likes {
         margin-right: 5px;

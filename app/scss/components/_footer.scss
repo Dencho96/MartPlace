@@ -30,27 +30,41 @@
         }
     }
     &__logo {
-        display: block;
+        display: inline-block;
         margin: -10px 0 16px;
     }
     &__text {
         margin: 0 0 19px;
         &--last {
-            margin-bottom: 0;
+            margin-bottom: 30px;
         }
     }
     &__contact {
         position: relative;
-        display: block;
+        display: inline-block;
         font-style: normal;
         padding-left: 29px;
+        @include link-transition;
+        &:hover {
+            box-shadow: 0 2px $gold;
+        }
+        &:focus {
+            box-shadow: 0 10px 12px -11px $light-blue;
+        }
+        &:active {
+            color: $blue;
+        }
         &+& {
             margin-top: 5px;
         }
+        &--phone::before,
+        &--email::before,
+        &--location::before {
+            content: "";
+            position: absolute;
+        }
         &--phone {
             &::before {
-                content: "";
-                position: absolute;
                 left: 0;
                 top: 5px;
                 width: 18px;
@@ -60,8 +74,6 @@
         }
         &--email {
             &::before {
-                content: "";
-                position: absolute;
                 left: 0;
                 top: 9px;
                 width: 17px;
@@ -71,8 +83,6 @@
         }
         &--location {
             &::before {
-                content: "";
-                position: absolute;
                 left: 2px;
                 top: 22px;
                 width: 10px;
@@ -85,6 +95,9 @@
         margin-bottom: 25px;
         font-size: 18px;
         color: white;
+    }
+    &__menu {
+        @include list-reset;
     }
     &__menu-item {
         &+& {
@@ -103,8 +116,11 @@
     &__email-submit {
         padding: 15px 30px 16px;
         color: white;
-        top: 33px;
         right: -1px;
+        top: 0;
+    }
+    &__social {
+        @include list-reset;
     }
     &__social-item {
         width: 42px;
@@ -113,43 +129,25 @@
         &+& {
             margin-left: 13px;
         }
-        &--facebook {
-            background-color: #395799;
-        }
-        &--twitter {
-            background-color: #19b2f5;
-        }
-        &--google {
-            background-color: #f05b44;
-        }
-        &--pinterest {
-            background-color: #9c0c1c;
-        }
-        &--linkedin {
-            background-color: #0da6be;
-        }
-        &--dribbble {
-            background-color: #ea4c89;
-        }
     }
     &__social-link {
         display: inline-block;
         height: 100%;
         width: 100%;
         border-radius: 50%;
-        padding-top: 9px;
+        padding-top: 7px;
         text-align: center;
         color: white;
         outline: transparent;
         transition: color 0.3s;
         &:hover {
-            color: red;
+            color: aqua;
         }
         &:focus {
             color: $gold
         }
         &:active {
-            color: $green;
+            color: greenyellow;
         }
     }
     &__copyright {

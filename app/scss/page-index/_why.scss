@@ -12,6 +12,7 @@
         line-height: 30px;
     }
     &__list {
+        @include list-reset;
         margin-bottom: 82px;
         display: flex;
         justify-content: space-between;

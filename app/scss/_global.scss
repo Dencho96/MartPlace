@@ -13,18 +13,21 @@ a {
     color: inherit;
 }
 
-ul,
-li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
 body {
     font-family: Quicksand, sans-serif;
     font-size: 16px;
     font-weight: 400;
+    background-color: white;
+    line-height: 1.15;
     counter-reset: why-counter;
+}
+
+.logo {
+    outline: transparent;
+    transition: box-shadow, 0.3s;
+    &:focus {
+        box-shadow: 0 10px 12px -11px $light-blue;
+    }
 }
 
 .container {
@@ -36,42 +39,50 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 19px 31px 16px 31px;
+    min-width: 190px;
+    padding: 19px 25px 16px 25px;
     border: 1px solid transparent;
     border-radius: 28px;
+    outline: transparent;
+    &--blue {
+        background-color: $blue;
+        color: #fff;
+    }
+    &--white,
+    &--transparent {
+        transition-property: background-color, box-shadow;
+        transition-duration: 0.3s;
+    }
+    &--white {
+        background-color: #fff;
+        color: $blue;
+        &:hover {
+            background-color: rgba(white, 0.7);
+        }
+        &:focus {
+            background-color: rgba($gold, 0.8);
+        }
+        &:active {
+            box-shadow: inset 0 -3px 4px $gray;
+        }
+    }
+    &--transparent {
+        border: 1px solid white;
+        color: white;
+        &:hover {
+            background-color: rgba($blue, 0.3);
+        }
+        &:focus {
+            background-color: rgba($gold, 0.8);
+        }
+        &:active {
+            box-shadow: inset 0 -3px 4px #e2fbff;
+        }
+    }
 }
 
-.btn--blue {
-    background-color: $blue;
-    color: #fff;
-}
-
-.btn--white,
-.btn--transparent {
-    transition-property: background-color, box-shadow;
-    transition-duration: 0.3s;
-}
-
-.btn--white {
-    background-color: #fff;
-    color: $blue;
-    &:hover {
-        background-color: rgba(white, 0.7);
-    }
-    &:active {
-        box-shadow: inset 0 -3px 4px $gray;
-    }
-}
-
-.btn--transparent {
-    border: 1px solid white;
-    color: white;
-    &:hover {
-        background-color: rgba($blue, 0.3);
-    }
-    &:active {
-        box-shadow: inset 0 -3px 4px #e2fbff;
-    }
+.d-block {
+    display: block !important;
 }
 
 .d-flex {

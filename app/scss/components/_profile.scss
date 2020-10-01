@@ -1,4 +1,5 @@
 .profile {
+    outline: transparent;
     align-items: center;
     &__avatar {
         width: 28px;
@@ -11,6 +12,7 @@
         margin-right: 18px;
         font-size: 15px;
         line-height: 22px;
+        outline: transparent;
         @include link-transition;
     }
     &__balance {

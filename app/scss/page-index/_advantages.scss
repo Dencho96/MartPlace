@@ -1,6 +1,7 @@
 .advantages {
     padding-top: 185px;
     &__list {
+        @include list-reset;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;

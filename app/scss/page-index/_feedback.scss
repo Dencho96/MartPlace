@@ -1,8 +1,27 @@
 .feedback {
+    position: relative;
+    box-sizing: border-box;
     padding-top: 112px;
     text-align: center;
+    &__nav-btn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(67, 67, 67, 0.15);
+        top: 50%;
+        z-index: 5;
+        &--prev {
+            left: 20.7%;
+        }
+        &--next {
+            right: 20.7%;
+        }
+    }
     &__inner {
-        justify-content: space-between;
         margin-bottom: 61px;
     }
     &__item {
@@ -14,6 +33,9 @@
         border-radius: 0 4px 4px 0;
         box-shadow: 0 2px 50px rgba(0, 0, 0, 0.08);
         text-align: left;
+        &+& {
+            margin-left: 28px;
+        }
     }
     &__profile {
         max-width: 350px;

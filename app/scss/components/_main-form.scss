@@ -3,7 +3,6 @@
     max-width: 360px;
     width: 100%;
     &__label {
-        display: inline-block;
         font-size: 0;
     }
     &__input {
@@ -19,12 +18,12 @@
     &__submit {
         position: absolute;
         right: 0;
-        top: 19px;
         padding: 6px 28px;
         background-color: #0674ec;
         border: none;
         border-radius: 23px;
         cursor: pointer;
+        outline: transparent;
         @include btn-transition;
     }
     &__submit-icon {
